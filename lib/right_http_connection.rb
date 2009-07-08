@@ -301,6 +301,7 @@ them.
           true
         }
         @http.use_ssl = true
+        @http.verify_mode     = OpenSSL::SSL::NONE
         ca_file = get_param(:ca_file)
         if ca_file
           @http.verify_mode     = OpenSSL::SSL::VERIFY_PEER
